@@ -90,6 +90,10 @@ a:focus-visible, button:focus-visible{
   transition: color 0.15s, border-color 0.15s;
 }
 .nav-links a:hover, .nav-links a.active{ color: var(--ink); border-color: var(--copper); }
+.nav-links a.nav-accent{
+  color: var(--ink); padding-left: 1.2em; margin-left: 0.4em; border-left: 1px solid var(--paper-line);
+}
+.nav-links a.nav-accent:hover{ color: var(--copper); }
 
 .nav-toggle{ display:none; background:none; border:none; cursor:pointer; padding: 8px; }
 .nav-toggle span{ display:block; width:20px; height:2px; background:var(--ink); margin:4px 0; }
@@ -103,6 +107,7 @@ a:focus-visible, button:focus-visible{
   }
   .nav-links.open{ max-height: 320px; }
   .nav-links a{ padding: 1em 1.5em; border-bottom: 1px solid var(--paper-line); width:100%; }
+  .nav-links a.nav-accent{ border-left:none; margin-left:0; padding-left:1.5em; }
 }
 
 /* ===================================================================
@@ -112,6 +117,9 @@ a:focus-visible, button:focus-visible{
 .hero-inner{
   max-width: var(--max); margin:0 auto;
   display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5em; align-items:center;
+}
+.locale{
+  font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); margin: 0 0 1.4em; letter-spacing: 0.02em;
 }
 .eyebrow{
   font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em;
@@ -224,6 +232,42 @@ a:focus-visible, button:focus-visible{
 .tag-teal{ background: var(--teal-soft); color: var(--teal); }
 .tag-copper{ background: var(--copper-soft); color: var(--copper); }
 
+/* Subsections (Experience / Projects within a domain section) */
+.subsection{ margin-top: 2.2em; }
+.subsection + .subsection{ margin-top: 2.8em; }
+.subsection-label{
+  font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--ink-soft); margin-bottom: 1em; padding-bottom: 0.4em; border-bottom: 1px solid var(--paper-line);
+}
+
+/* Role entries (Experience) */
+.role-entry{ padding: 1.1em 0; border-bottom: 1px solid var(--paper-line); }
+.role-entry:last-child{ border-bottom: none; }
+.role-top{ display:flex; flex-wrap:wrap; align-items:baseline; gap: 0.8em; justify-content:space-between; }
+.role-top h3{ margin:0; font-size: 1.05rem; }
+.role-status{ font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+.role-status-teal{ color: var(--teal); }
+.role-status-copper{ color: var(--copper); }
+.role-entry p{ font-size: 0.94rem; margin: 0.5em 0 0; max-width: 42em; }
+
+.stat{ display:flex; align-items:baseline; gap: 0.7em; margin-top: 0.9em; }
+.stat-num{ font-family: var(--serif); font-size: 1.6rem; color: var(--teal); font-weight:600; }
+.stat-label{ font-size: 0.86rem; color: var(--ink-soft); max-width: 26em; }
+
+/* Flagship project cards */
+.flagship-solo{ max-width: 660px; }
+.card-flagship .card-micro{ margin-top: 1.1em; padding-top: 1em; border-top: 1px dashed var(--paper-line); display:flex; flex-direction:column; gap: 0.6em; }
+.card-flagship .card-micro p{ font-size: 0.86rem; margin:0; }
+.micro-label{ font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink); margin-right: 0.5em; }
+
+/* Condensed project list ("Also building") */
+.mini-list-wrap{ margin-top: 1.6em; }
+.mini-list{ display:flex; flex-direction:column; }
+.mini-list li{ padding: 0.9em 0; border-bottom: 1px solid var(--paper-line); }
+.mini-list li:last-child{ border-bottom:none; }
+.mini-list h4{ font-family: var(--serif); font-size: 1rem; font-weight:600; color: var(--ink); margin:0 0 0.3em; display:flex; align-items:center; gap: 0.7em; }
+.mini-list p{ font-size: 0.9rem; margin:0; max-width: 40em; }
+
 .stack{ margin-top: 2.6em; }
 .stack-label{ font-family: var(--mono); font-size: 0.75rem; text-transform:uppercase; letter-spacing:0.05em; color: var(--ink-soft); margin-bottom:0.8em; }
 .stack-list{ display:flex; flex-wrap:wrap; gap: 0.6em; }
@@ -258,6 +302,16 @@ a:focus-visible, button:focus-visible{
 @media (max-width: 780px){ .skills-grid{ grid-template-columns: 1fr; gap: 1.6em; } }
 
 /* ===================================================================
+   BEYOND THE BENCH
+=================================================================== */
+.beyond-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 1.2em; margin-top: 1.8em; }
+.beyond-tile{ padding: 1.3em 1.4em; border: 1px solid var(--paper-line); border-radius: var(--radius); background: #fff2; }
+.beyond-tile h3{ font-size: 1rem; margin-bottom: 0.4em; }
+.beyond-tile p{ font-size: 0.88rem; margin:0; }
+@media (max-width: 860px){ .beyond-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px){ .beyond-grid{ grid-template-columns: 1fr; } }
+
+/* ===================================================================
    CONTACT / FOOTER
 =================================================================== */
 .contact{ background: linear-gradient(180deg, var(--spine), var(--spine-2)); color: var(--paper); padding: 4.5em 1.5em 2.5em; margin-top: 2em; }
@@ -268,6 +322,7 @@ a:focus-visible, button:focus-visible{
 .contact-links a{ text-decoration:none; color: var(--paper); border-bottom: 1px solid rgba(238,240,232,0.4); padding-bottom:2px; }
 .contact-links a:hover{ color: var(--copper); border-color: var(--copper); }
 .fine-print{ font-family: var(--mono); font-size: 0.75rem; color: #8FA098; margin:0; }
+.fine-print.colophon{ margin-top: 0.4em; color: #6E8078; }
 .contact .edit-me{ opacity:0.9; }
 
 /* ===================================================================
