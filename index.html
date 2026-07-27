@@ -24,6 +24,8 @@
       <a href="#engineering" data-nav>Engineering</a>
       <a href="#clinical" data-nav>Clinical</a>
       <a href="#contact" data-nav>Contact</a>
+      <a href="resume.pdf" class="nav-accent edit-me">Résumé</a>
+      <a href="https://linkedin.com/in/yourprofile" class="nav-accent edit-me" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -37,6 +39,7 @@
   <section class="hero" id="top">
     <div class="hero-inner">
       <div class="hero-copy">
+        <p class="locale">Dallas–Fort Worth, TX · pre-med</p>
         <p class="eyebrow">Biomedical Engineering &nbsp;×&nbsp; Neuroscience &nbsp;×&nbsp; Applied AI</p>
         <h1>Aryan <span class="edit-me" title="Add your last name">[Last&nbsp;Name]</span></h1>
         <p class="hero-statement">I study how the nervous system computes — then build the tools that help clinicians and researchers read it.</p>
@@ -86,6 +89,7 @@
         <p class="about-lead">My grandfather spent his career as an ophthalmologic surgeon. I grew up hearing what precision under pressure actually looks like — and that's the model I'm training toward. Not just a physician, but someone who understands the tools well enough to build the ones medicine still needs.</p>
         <div class="about-body">
           <p>I'm a Biomedical Engineering Honors student at UT Dallas (Collegium V Honors, National Merit Scholar) on a pre-med track. My work sits in three places at once: <strong>neuroscience research</strong>, studying how neural circuits drive behavior; <strong>applied AI</strong>, building retrieval and agent systems for clinical and research use; and <strong>direct patient care</strong>, logging the hours that will make me a better physician before I'm ever handed a white coat.</p>
+          <p>I'm also part of Nucleate's Dallas Dojo program, working through the early stages of biotech venture-building — the "founder" half of the equation, tested against a real cohort instead of just an idea.</p>
           <p>The goal isn't to pick a lane. It's to practice medicine and build the infrastructure around it.</p>
         </div>
       </div>
@@ -101,30 +105,46 @@
       <h2>Understanding neural circuits, one photon at a time</h2>
       <p class="section-intro">I work in Dr. Parekh's Neuroscience Lab at UT Dallas, spanning behavioral assay design, fiber photometry data pipelines, and manuscript preparation.</p>
 
-      <div class="card-grid">
-        <article class="card card-teal">
+      <div class="subsection">
+        <p class="subsection-label">Experience</p>
+        <div class="role-entry">
+          <div class="role-top">
+            <h3>Undergraduate Researcher — Parekh Neuroscience Lab</h3>
+            <span class="role-status role-status-teal">Current</span>
+          </div>
+          <p>Behavioral assay design, fiber photometry pipelines, and manuscript prep across two active projects, targeting SfN 2027 as a conference debut.</p>
+          <div class="stat">
+            <span class="stat-num">2nd</span>
+            <span class="stat-label">of 350 applicants — URSA 2026, only freshman finalist</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <p class="subsection-label">Projects</p>
+        <article class="card card-teal card-flagship flagship-solo">
           <div class="card-tags"><span class="tag tag-teal">Research</span><span class="tag tag-teal">Hardware</span></div>
           <h3>Novel OHRBETS Assay — Dynamic Resistance Modulation</h3>
-          <p>Designed and built an extension of the OHRBETS behavioral platform combining a magnetic particle brake with custom Arduino control for dynamic resistance modulation. PI-confirmed as a first-author manuscript in preparation.</p>
+          <p>Extended the OHRBETS behavioral platform with a magnetic particle brake and custom Arduino control, so resistance can change mid-task instead of only between trials.</p>
+          <div class="card-micro">
+            <p><span class="micro-label">Problem</span> Existing assays could only set resistance once per trial, missing how animals adapt within a task.</p>
+            <p><span class="micro-label">Status</span> PI-confirmed as a first-author manuscript in preparation.</p>
+          </div>
         </article>
 
-        <article class="card card-dual">
-          <div class="card-tags"><span class="tag tag-teal">Research</span><span class="tag tag-copper">Tools</span></div>
-          <h3>FiberGrapher</h3>
-          <p>Built a visualization tool now used in the lab's fiber photometry pipeline, turning raw photometry traces into publication-ready figures. Sits right at the intersection of the lab bench and software.</p>
-        </article>
+        <div class="card-grid">
+          <article class="card card-dual">
+            <div class="card-tags"><span class="tag tag-teal">Research</span><span class="tag tag-copper">Tools</span></div>
+            <h3>FiberGrapher</h3>
+            <p>Built a visualization tool now used in the lab's fiber photometry pipeline, turning raw photometry traces into publication-ready figures. Sits right at the intersection of the lab bench and software.</p>
+          </article>
 
-        <article class="card card-teal">
-          <div class="card-tags"><span class="tag tag-teal">Writing</span></div>
-          <h3>2nd Author, Two Manuscripts</h3>
-          <p>Contributing second-author work on two manuscripts from the Parekh Lab, in preparation for submission to journals including eLife, Cell Reports, and Journal of Neuroscience.</p>
-        </article>
-
-        <article class="card card-teal">
-          <div class="card-tags"><span class="tag tag-teal">Recognition</span></div>
-          <h3>2nd Place, URSA 2026</h3>
-          <p>Placed 2nd out of 350 applicants at UT Dallas's Undergraduate Research Scholars competition — the only freshman finalist that year.</p>
-        </article>
+          <article class="card card-teal">
+            <div class="card-tags"><span class="tag tag-teal">Writing</span></div>
+            <h3>2nd Author, Two Manuscripts</h3>
+            <p>Contributing second-author work on two manuscripts from the Parekh Lab, in preparation for submission to journals including eLife, Cell Reports, and Journal of Neuroscience.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -138,24 +158,44 @@
       <h2>Tools that help clinicians and researchers move faster</h2>
       <p class="section-intro">I build retrieval systems and agents that sit close to real clinical and research workflows — not demos, tools people actually use.</p>
 
-      <div class="card-grid">
-        <article class="card card-copper">
+      <div class="subsection">
+        <p class="subsection-label">Experience</p>
+        <div class="role-entry">
+          <div class="role-top">
+            <h3>Computational Biology Intern — Colossal Biosciences</h3>
+            <span class="role-status role-status-copper">Ongoing</span>
+          </div>
+          <p>Improving the retrieval pipeline behind an internal RAG chatbot used by the computational biology team, continuing through the summer and potentially beyond.</p>
+        </div>
+        <div class="role-entry">
+          <div class="role-top">
+            <h3>Intern — Adilabs</h3>
+            <span class="role-status role-status-copper">Prior</span>
+          </div>
+          <p>Built computer vision and GraphRAG systems for structuring and querying clinical data.</p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <p class="subsection-label">Projects</p>
+        <article class="card card-copper card-flagship flagship-solo">
           <div class="card-tags"><span class="tag tag-copper">AI Agents</span><span class="tag tag-copper">LangGraph</span></div>
           <h3>Clinical Triage Agent</h3>
-          <p>A LangGraph-based agent for clinical triage support, running on local inference (Ollama + Gemma) so it can operate without sending patient data to a third party.</p>
+          <p>A LangGraph-based agent for clinical triage support, running on local inference so it can operate without sending patient data to a third party.</p>
+          <div class="card-micro">
+            <p><span class="micro-label">Why local</span> A clinical tool that phones home to a third-party API is a non-starter for real patient data — this one isn't.</p>
+            <p><span class="micro-label">Stack</span> LangGraph · Ollama · Gemma</p>
+          </div>
         </article>
 
-        <article class="card card-copper">
-          <div class="card-tags"><span class="tag tag-copper">RAG</span><span class="tag tag-copper">Internship</span></div>
-          <h3>Colossal Biosciences — Computational Biology</h3>
-          <p>Improving the retrieval pipeline behind an internal RAG chatbot used by the computational biology team. Ongoing.</p>
-        </article>
-
-        <article class="card card-copper">
-          <div class="card-tags"><span class="tag tag-copper">GraphRAG</span><span class="tag tag-copper">Computer Vision</span></div>
-          <h3>Adilabs — Clinical Data Systems</h3>
-          <p>Built computer vision and GraphRAG systems for structuring and querying clinical data.</p>
-        </article>
+        <div class="mini-list-wrap">
+          <p class="stack-label">Also building</p>
+          <ul class="mini-list">
+            <li><h4>StockMind <span class="tag tag-copper">Product</span></h4><p>An AI agent for equity research and analysis, scoped end-to-end as a full product spec.</p></li>
+            <li><h4>FRIDAY <span class="tag tag-copper">Agents</span></h4><p>A personal AI assistant project exploring agentic workflows for everyday tasks.</p></li>
+            <li><h4>Prediction-market bots <span class="tag tag-copper">Exploratory</span></h4><p>Early experiments wiring LLMs into market analysis on Kalshi.</p></li>
+          </ul>
+        </div>
       </div>
 
       <div class="stack">
@@ -177,6 +217,11 @@
       <h2>Hours logged toward the person I want to be as a physician</h2>
 
       <ol class="timeline">
+        <li>
+          <span class="timeline-status">July 2026</span>
+          <h3>Clinical Shadowing — Texas Health Resources, Plano (ER)</h3>
+          <p>Shadowing an ER physician across multiple shifts, with reflective notes tied to how AI is showing up in acute care.</p>
+        </li>
         <li>
           <span class="timeline-status">In progress · Summer 2026</span>
           <h3>EMT-B Certification</h3>
@@ -217,6 +262,32 @@
     </div>
   </section>
 
+  <!-- ============ BEYOND THE BENCH ============ -->
+  <section class="section beyond">
+    <div class="section-inner">
+      <p class="eyebrow">Beyond the Bench</p>
+      <h2>The rest of the signal</h2>
+      <div class="beyond-grid">
+        <div class="beyond-tile">
+          <h3>Philosophy</h3>
+          <p>Working through philosophy and self-improvement, starting with <em>Meditations</em>.</p>
+        </div>
+        <div class="beyond-tile">
+          <h3>Guitar</h3>
+          <p>Learning guitar — slow, deliberate progress, the same way I like my research.</p>
+        </div>
+        <div class="beyond-tile">
+          <h3>Sound Design</h3>
+          <p>Producing binaural audio in Reaper — another excuse to think about signals and waveforms.</p>
+        </div>
+        <div class="beyond-tile">
+          <h3>Training</h3>
+          <p>Three days a week, full-body — the one dataset I collect on myself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- ============ CONTACT / FOOTER ============ -->
@@ -232,6 +303,7 @@
       <a href="resume.pdf" class="edit-me">Résumé</a>
     </div>
     <p class="fine-print">Built by Aryan <span class="edit-me">[Last Name]</span> · <span id="year"></span></p>
+    <p class="fine-print colophon">Handwritten HTML, CSS &amp; JS. Set in Source Serif 4 and IBM Plex.</p>
   </div>
 </footer>
 
