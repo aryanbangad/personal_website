@@ -27,7 +27,7 @@ window.addEventListener('scroll', setActive, { passive: true });
 setActive();
 
 // Scroll reveal
-const revealTargets = document.querySelectorAll('.card, .timeline li, .skills-col, .about-grid, .path-card');
+const revealTargets = document.querySelectorAll('.card, .timeline li, .skills-col, .about-grid, .path-card, .role-entry, .beyond-tile, .mini-list li');
 revealTargets.forEach(el => el.setAttribute('data-reveal', ''));
 
 const io = new IntersectionObserver((entries) => {
